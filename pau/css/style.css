@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom, #c084fc, #e9d5ff);
+    text-align: center;
+    color: white;
+}
+section{
+    padding: 40px;
+}
+.foto-parque {
+    width: 500px;
+    border-radius: 30px;
+}
+.foto-hote{
+    width: 500px;
+    border-radius: 30px;
+    border-color: antiquewhite;
+}
+.foto-espejo{
+    width: 500px;
+    border-radius: 30px;
+}
+.foto-playa{
+    width: 500px;
+    border-radius: 30px;
+}
+.foto-final{
+    width: 500px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.carta{
+    background: white;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background: #a855f7;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+#sorpresa {
+    display: none;
+}
+.fade{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1.5s ease forwards;
+}
+fade:nth-child(1) { animation-delay: 0.5s; }
+.fade:nth-child(2) { animation-delay: 1s; }
+.fade:nth-child(3) { animation-delay: 1.5s; }
+.fade:nth-child(4) { animation-delay: 2s; }
+.fade:nth-child(5) { animation-delay: 2.5s; }
+.fade:nth-child(6) { animation-delay: 3s; }
+
+@keyframes aparecer {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
